@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
 body {
   height: 100vh;
   margin: 0;
@@ -14,19 +20,23 @@ body {
 .footer,
 ul {
   display: flex;
+  /* flex: auto; */
 }
 
 .header {
+  padding: 8px;
 }
 
 .content {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex: 1;
 }
 
 .footer {
   align-items: flex-end;
+  background-color: #eee;
 }
 
 li {
@@ -42,9 +52,11 @@ a {
 }
 
 ul.right-links {
-  /* flex: auto; */
   display: flex;
-  justify-content: flex-end;
+}
+
+ul.left-links {
+  padding-left: 0;
 }
 
 img {
@@ -64,4 +76,10 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: flex-end;
+  flex: auto;
 }
